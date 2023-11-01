@@ -11,15 +11,15 @@ function Navbar() {
 
   return (
     <>
-      <header className="flex justify-between">
-        <div className="mockup-code font-serif text-xl hover:translate-y-1 hover:duration-200 cursor-pointer">
+      <header className="flex md:max-w-full w-full justify-between">
+        <div className="flex mockup-code font-serif text-xl hover:translate-y-1 hover:duration-200 cursor-pointer">
           <span className=" font-extrabold">{" <"}</span>
           <code>Itallo Aquino</code>
           <span className=" font-extrabold">{" />"}</span>
         </div>
         {/* Desktop Navbar */}
-        <nav className="w-1/2 hidden md:flex gap-5">
-          <ul className="flex items-center justify-between w-full">
+        <nav className=" md:w-auto  w-1/2 hidden md:flex gap-5">
+          <ul className="flex items-center justify-between w-full md:gap-10">
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
               <a href="#">/ home</a>
             </li>
