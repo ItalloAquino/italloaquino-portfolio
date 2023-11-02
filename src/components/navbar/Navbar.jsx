@@ -45,7 +45,7 @@ function Navbar() {
 
         {/* Mobile Navbar */}
         {navOpen && (
-          <nav className="h-[50%] fixed top-[0px] right-[0px] flex flex-col justify-around items-center w-full md:hidden bg-white z-40 duration-1000">
+          <nav className="h-[100vh] fixed top-[0px] right-[0px] flex flex-col justify-around items-center w-full md:hidden bg-gradient-to-r from-rose-100 to-teal-100 z-40">
             <a
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
               href="#"

@@ -2,7 +2,7 @@ function Hero() {
   return (
     <>
       <section>
-        <div className="max-w-4xl mx-auto md:my-40 my-20">
+        <div className="max-w-4xl mx-auto md:my-40 my-20 ">
           <div className="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
             <span className="w-3 h-3 rounded-full bg-red-400"></span>
             <span className="w-3 h-3 rounded-full bg-yellow-400"></span>
