@@ -12,5 +12,34 @@
   flex-direction: column;
 }
 
+summary:first-of-type {
+  list-style-type: none;
+}
 
+summary:after {
+  border-radius: 0.3rem;
+  content: "+";
+  color: #000;
+  float: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: -0.44rem 0.75rem 0 0;
+  padding: 0;
+  text-align: center;
+  width: 1.25rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+details[open] summary:after {
+  content: "-";
+  font-size: 2rem;
+}
 
+@media (max-width: 640px) {
+  summary::after {
+    list-style-type: none;
+    display: none;
+  }
+}
