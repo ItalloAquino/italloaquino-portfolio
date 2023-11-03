@@ -13,7 +13,7 @@
 }
 
 html {
-  scrool-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 summary:first-of-type {
