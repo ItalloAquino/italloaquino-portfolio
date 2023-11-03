@@ -16,8 +16,6 @@ summary:first-of-type {
   list-style-type: none;
 }
 
-
-
 summary {
   cursor: pointer;
   list-style-type: none;
@@ -33,7 +31,7 @@ summary {
   font-weight: bold;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
-  }
+}
 
 summary:after {
   border-radius: 0.3rem;
