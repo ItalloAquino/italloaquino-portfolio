@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -21,16 +22,44 @@ function Navbar() {
         <nav className=" md:w-auto  w-1/2 hidden md:flex gap-5">
           <ul className="flex items-center justify-between w-full md:gap-10">
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
-              <a href="#">/ home</a>
+              <Link
+                to="hero"
+                smooth={true}
+                duration={1500}
+                className="cursor-pointer"
+              >
+                / home
+              </Link>
             </li>
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
-              <a href="#">/ about-me</a>
+              <Link
+                to="about"
+                smooth={true}
+                duration={1500}
+                className="cursor-pointer"
+              >
+                / about-me
+              </Link>
             </li>
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
-              <a href="#">/ my-projects</a>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={1500}
+                className="cursor-pointer"
+              >
+                / my-projects
+              </Link>
             </li>
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
-              <a href="#">/ hire-me</a>
+              <Link
+                to="hire"
+                smooth={true}
+                duration={1500}
+                className="cursor-pointer"
+              >
+                / hire-me
+              </Link>
             </li>
           </ul>
         </nav>
@@ -38,7 +67,7 @@ function Navbar() {
         {/* Hamburger */}
         <FontAwesomeIcon
           icon={navOpen ? faXmark : faBars}
-          className="text-3xl md:hidden z-50 cursor-pointer"
+          className="text-3xl md:hidden z-50 cursor-pointer fixed right-5 top-5"
           aria-hidden="true"
           onClick={toggleNav}
         />
@@ -48,25 +77,25 @@ function Navbar() {
           <nav className="h-[100vh] fixed top-[0px] right-[0px] flex flex-col justify-around items-center w-full md:hidden bg-gradient-to-r from-rose-100 to-teal-100 z-40">
             <a
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
-              href="#"
+              href="#hero"
             >
               / home
             </a>
             <a
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
-              href="#"
+              href="#about"
             >
               / about-me
             </a>
             <a
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
-              href="#"
+              href="#projects"
             >
               / my-projects
             </a>
             <a
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
-              href="#"
+              href="#hire"
             >
               / hire-me
             </a>

@@ -12,6 +12,10 @@
   flex-direction: column;
 }
 
+html {
+  scrool-behavior: smooth;
+}
+
 summary:first-of-type {
   list-style-type: none;
 }
@@ -53,6 +57,9 @@ details[open] summary:after {
   content: "-";
   font-size: 2rem;
 }
+
+
+
 
 @media (max-width: 640px) {
   summary::after {
