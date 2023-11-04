@@ -25,7 +25,7 @@ function Navbar() {
               <Link
                 to="hero"
                 smooth={true}
-                duration={1500}
+                duration={100}
                 className="cursor-pointer"
               >
                 / home
@@ -35,7 +35,7 @@ function Navbar() {
               <Link
                 to="about"
                 smooth={true}
-                duration={1500}
+                duration={100}
                 className="cursor-pointer"
               >
                 / about-me
@@ -45,7 +45,7 @@ function Navbar() {
               <Link
                 to="projects"
                 smooth={true}
-                duration={1500}
+                duration={100}
                 className="cursor-pointer"
               >
                 / my-projects
@@ -53,9 +53,12 @@ function Navbar() {
             </li>
             <li className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500">
               <Link
+                activeClass="active"
                 to="hire"
                 smooth={true}
-                duration={1500}
+                spy={true}
+                offset={-70}
+                duration={100}
                 className="cursor-pointer"
               >
                 / hire-me
@@ -76,24 +79,28 @@ function Navbar() {
         {navOpen && (
           <nav className="h-[100vh] fixed top-[0px] right-[0px] flex flex-col justify-around items-center w-full md:hidden bg-gradient-to-r from-rose-100 to-teal-100 z-40">
             <a
+              onClick={toggleNav}
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
               href="#hero"
             >
               / home
             </a>
             <a
+              onClick={toggleNav}
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
               href="#about"
             >
               / about-me
             </a>
             <a
+              onClick={toggleNav}
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
               href="#projects"
             >
               / my-projects
             </a>
             <a
+              onClick={toggleNav}
               className=" hover:bg-yellow-400 hover:text-black p-1 hover:translate-x-1 hover:translate-y-1  hover:duration-500"
               href="#hire"
             >

@@ -3,7 +3,10 @@ import { Element } from "react-scroll";
 function AboutMe() {
   return (
     <>
-      <Element name="about" className="flex items-center justify-center md:w-full font-mono w-screen md:h-auto h-auto md:flex-col md:mt-24 md:m-0 mt-16">
+      <Element
+        name="about"
+        className="flex items-center justify-center md:w-full font-mono w-screen md:h-auto h-auto md:flex-col md:mt-24 md:m-0 mt-16"
+      >
         <section
           id="about"
           className="flex items-center justify-center md:w-full font-mono w-screen md:h-auto h-auto md:flex-col md:mt-24 px-4 md:px-0 md:m-0 mt-16"

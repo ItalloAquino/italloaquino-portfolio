@@ -58,7 +58,7 @@ function HireMe() {
                   className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                   type="text"
                   name="from_name"
-                  placeholder="Text your best name. Ex. Jhon Travolta"
+                  placeholder="Text your best name. E.g. John Travolta."
                   aria-label="Full name"
                 ></input>
               </div>
@@ -67,7 +67,7 @@ function HireMe() {
                   className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                   type="email"
                   name="from_email"
-                  placeholder="Text your best email. Ex. jhontravolta@email.com"
+                  placeholder="Text your best email. E.g. johntravolta@email.com"
                   aria-label="Email"
                 ></input>
               </div>

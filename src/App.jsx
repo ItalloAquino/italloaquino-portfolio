@@ -7,6 +7,7 @@ import MyProjects from "./components/myprojects/MyProjects";
 import HireMe from "./components/hireme/HireMe";
 import SocialMediaIcons from "./components/socialmedia/SocialMedia";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <HireMe />
       <SocialMediaIcons />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

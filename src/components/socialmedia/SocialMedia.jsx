@@ -1,5 +1,5 @@
-import { AiFillLinkedin } from "react-icons/ai";
-import { RiTwitterXFill } from "react-icons/ri";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+
 import { BsWhatsapp } from "react-icons/bs";
 
 function SocialMediaIcons() {
@@ -14,12 +14,12 @@ function SocialMediaIcons() {
           <AiFillLinkedin className="w-8 h-8" />
         </a>
         <a
-          href="https://twitter.com/AquinoItallo"
+          href="https://github.com/ItalloAquino"
           target="_blank"
           rel="noreferrer"
         >
           {" "}
-          <RiTwitterXFill className="w-8 h-8" />
+          <AiFillGithub className="w-8 h-8" />
         </a>
         <a href="https://wa.link/7kbnbq" target="_blank" rel="noreferrer">
           {" "}
