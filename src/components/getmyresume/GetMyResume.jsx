@@ -1,7 +1,8 @@
 function GetMyResume() {
   const downloadCurriculum = () => {
     const link = document.createElement("a");
-    link.href = "./public/resume/itallo_aquino_resume.pdf"; // Caminho para o currículo
+    link.href =
+      "https://drive.google.com/uc?export=download&id=1ZnuCUnWfhk--plB-sXq1E95KJGI8Xx-t"; // Caminho para o currículo
     link.download = "itallo_aquino_resume.pdf"; // Nome do arquivo ao ser baixado
     link.click();
   };
